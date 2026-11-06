@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف أرساني ورفقة | Arsany & Refka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Alex+Brush&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+        body { font-family: 'Cairo', sans-serif; background-color: #0d1b2a; color: #fff; overflow-x: hidden; }
+        
+        .slide { 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 30px 20px; 
+            text-align: center; 
+            position: relative; 
+        }
+        
+        /* Cover */
+        .cover { 
+            background: linear-gradient(rgba(13,27,42,0.85), rgba(13,27,42,0.85)), url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat; 
+        }
+        .gold-title { font-family: 'Cinzel', serif; color: #d4af37; font-size: 2.8rem; letter-spacing: 2px; margin-bottom: 10px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        .sub-title { font-family: 'Alex Brush', cursive; color: #f4e2d8; font-size: 3.2rem; margin-bottom: 25px; }
+        
+        /* Couple Photo Slide */
+        .couple-slide { 
+            background: linear-gradient(rgba(13,27,42,0.7), rgba(13,27,42,0.7)), url('https://i.ibb.co/60VfZmX/image-4.png') center/cover no-repeat; 
+        }
+        .card { 
+            background: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.4); 
+            border-radius: 20px; 
+            padding: 40px 25px; 
+            max-width: 480px; 
+            width: 100%; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5); 
+        }
+        
+        /* Save The Date */
+        .std-slide { background: #fdfbf7; color: #1b263b; }
+        .std-card { 
+            border: 2px solid #d4af37; 
+            padding: 40px 25px; 
+            border-radius: 20px; 
+            background: #fff; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
+            max-width: 450px;
+            width: 100%;
+        }
+        .adults-only { 
+            background: #d9534f; 
+            color: white; 
+            padding: 10px 20px; 
+            border-radius: 25px; 
+            font-weight: bold; 
+            display: inline-block; 
+            margin-top: 20px; 
+            font-size: 0.95rem; 
+            letter-spacing: 0.5px;
+        }
+        
+        /* Locations */
+        .loc-card { 
+            background: #1b263b; 
+            border: 1px solid #d4af37; 
+            border-radius: 16px; 
+            padding: 25px 20px; 
+            margin: 12px 0; 
+            width: 100%; 
+            max-width: 420px; 
+            text-align: center; 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        .btn-map { 
+            display: inline-block; 
+            margin-top: 15px; 
+            padding: 10px 24px; 
+            background: #d4af37; 
+            color: #0d1b2a; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 30px; 
+            transition: all 0.3s ease;
+        }
+        .btn-map:hover { background: #f4e2d8; transform: translateY(-2px); }
+
+        /* RSVP Form */
+        .rsvp-form input, .rsvp-form textarea, .rsvp-form select { 
+            width: 100%; 
+            padding: 14px; 
+            margin: 10px 0; 
+            border-radius: 10px; 
+            border: 1px solid #ccc; 
+            font-family: 'Cairo', sans-serif; 
+            font-size: 1rem;
+            outline: none;
+        }
+        .rsvp-form input:focus, .rsvp-form textarea:focus, .rsvp-form select:focus {
+            border-color: #d4af37;
+            box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+        }
+        .btn-send { 
+            width: 100%; 
+            padding: 14px; 
+            background: #0d1b2a; 
+            color: #d4af37; 
+            border: 2px solid #d4af37; 
+            border-radius: 10px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            font-size: 1.1rem; 
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        .btn-send:hover {
+            background: #d4af37;
+            color: #0d1b2a;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9rem;
+            color: #d4af37;
+            opacity: 0.8;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Cover -->
+    <div class="slide cover">
+        <h1 class="gold-title">Arsany & Refka</h1>
+        <p class="sub-title">We Are Getting Married</p>
+        <p style="color: #e0e0e0; font-size: 1.2rem; margin-top: 15px;">Sunday, 22 November 2026</p>
+        <div class="scroll-down">▼ اسحب للأسفل ▼</div>
+    </div>
+
+    <!-- Slide 2: Couple Photo -->
+    <div class="slide couple-slide">
+        <div class="card">
+            <h2 style="font-family:'Alex Brush', cursive; font-size: 3.8rem; color:#d4af37;">Arsany & Refka</h2>
+            <p style="font-size: 1.3rem; margin: 20px 0; color: #fff; font-weight: 600;">"فَالَّذِي جَمَعَهُ اللهُ لاَ يُفَرِّقُهُ إِنْسَانٌ"</p>
+            <p style="color: #f4e2d8; font-size: 1.1rem;">يسعدنا حضوركم لتكتمل فرحتنا</p>
+        </div>
+        <div class="scroll-down">▼ اسحب للأسفل ▼</div>
+    </div>
+
+    <!-- Slide 3: Save The Date -->
+    <div class="slide std-slide">
+        <div class="std-card">
+            <h2 style="font-family:'Cinzel', serif; color:#d4af37; font-size: 2.2rem; letter-spacing: 1px;">SAVE THE DATE</h2>
+            <h3 style="font-size: 2rem; margin: 15px 0; color:#0d1b2a; font-weight: 700;">22 . 11 . 2026</h3>
+            <p style="font-style: italic; color: #555; font-size: 1.1rem;">A beautiful day to begin forever</p>
+            <div class="adults-only">Strictly Adults Only / No Children Allowed</div>
+        </div>
+        <div class="scroll-down" style="color: #0d1b2a;">▼ اسحب للأسفل ▼</div>
+    </div>
+
+    <!-- Slide 4: Locations -->
+    <div class="slide" style="background:#0d1b2a;">
+        <h2 style="color:#d4af37; font-family:'Cinzel', serif; font-size: 2.2rem; margin-bottom: 25px;">WHERE & WHEN</h2>
+        
+        <div class="loc-card">
+            <h3 style="color:#d4af37; font-size: 1.4rem;">الإكليل المقدّس</h3>
+            <p style="margin: 8px 0; font-size: 1.1rem;">كنيسة العذراء المرعشلي - الزمالك</p>
+            <p style="color:#aaa; font-size: 1rem;">الساعة 5:00 مساءً</p>
+            <a href="https://maps.google.com/?q=Virgin+Mary+Church+Zamalek" target="_blank" class="btn-map">موقع الكنيسة 📍</a>
+        </div>
+
+        <div class="loc-card">
+            <h3 style="color:#d4af37; font-size: 1.4rem;">حفل الزفاف</h3>
+            <p style="margin: 8px 0; font-size: 1.1rem;">فندق إنتركونتيننتال سميراميس (قاعة كليوباترا)</p>
+            <p style="color:#aaa; font-size: 1rem;">الساعة 7:00 مساءً</p>
+            <a href="https://maps.google.com/?q=InterContinental+Semiramis+Cairo" target="_blank" class="btn-map">موقع القاعة 📍</a>
+        </div>
+        <div class="scroll-down">▼ اسحب للأسفل ▼</div>
+    </div>
+
+    <!-- Slide 5: RSVP -->
+    <div class="slide std-slide">
+        <div class="std-card">
+            <h2 style="font-family:'Cinzel', serif; color:#0d1b2a; font-size: 2.2rem;">RSVP</h2>
+            <p style="color:#666; margin-bottom:20px; font-size: 1.1rem;">تأكيد الحضور</p>
+
+            <form class="rsvp-form" onsubmit="sendWhatsApp(event)">
+                <input type="text" id="guestName" placeholder="الاسم / Your Name" required>
+                <select id="attendance" required>
+                    <option value="يشرفني الحضور (Yes)">يشرفني الحضور / Attending (YES)</option>
+                    <option value="أعتذر عن الحضور (No)">أعتذر عن الحضور / Regretfully Decline (NO)</option>
+                </select>
+                <textarea id="message" rows="3" placeholder="اكتب تهنئتك للعروسين..."></textarea>
+                <button type="submit" class="btn-send">SEND / إرسال عبر الواتساب</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function sendWhatsApp(e) {
+            e.preventDefault();
+            var name = document.getElementById('guestName').value;
+            var status = document.getElementById('attendance').value;
+            var msg = document.getElementById('message').value;
+            var phone = "201225822268";
+            
+            var text = "*رد على دعوة زفاف أرساني ورفقة*%0A%0A" +
+                       "*الاسم:* " + name + "%0A" +
+                       "*حالة الحضور:* " + status + "%0A" +
+                       "*الرسالة:* " + msg;
+                       
+            window.open("https://wa.me/" + phone + "?text=" + text, '_blank');
+        }
+    </script>
+</body>
+</html>
